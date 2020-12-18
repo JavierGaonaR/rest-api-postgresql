@@ -1,0 +1,27 @@
+{
+  "name": "rest-api-postgresql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavierGaonaR/rest-api-postgresql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JavierGaonaR/rest-api-postgresql/issues"
+  },
+  "homepage": "https://github.com/JavierGaonaR/rest-api-postgresql#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.5.1"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
