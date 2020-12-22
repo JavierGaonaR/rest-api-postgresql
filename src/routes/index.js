@@ -8,9 +8,16 @@ router.get('/', function (req, res) {
     });
 });
 
-const { getUsuarios, postUsuario } = require('../controller/usuario.controller'); 
+const usuarioController = require('../controller/usuario.controller'); 
 
-router.get('/usuarios', getUsuarios);
-router.post('/usuario', postUsuario);
+router.route('/usuarios')
+    .get(usuarioController.view)
+    .post(usuarioController.new);
+
+router.route('/usuario/:id')
+    .get(usuarioController.index)
+    .put(usuarioController.update)
+    .delete(usuarioController.delete);
+
 
 module.exports = router;
